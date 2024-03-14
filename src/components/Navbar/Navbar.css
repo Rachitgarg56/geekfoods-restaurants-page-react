@@ -1,0 +1,82 @@
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0.6px black;
+}
+
+nav .container {
+    width: 1277px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+nav .logo-name .name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+nav .logo-name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.get-started-btn {
+    background-color: blue;
+    border: none;
+    padding: 0.6rem 1rem;
+    padding-top: 0.7rem;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.get-started-btn:hover {
+    background-color: #1E40AF;
+}
+
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+        display: none;
+    }
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        color: gray;
+        margin-right: 0.5rem;
+    }
+    .get-started {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
